@@ -1,0 +1,10 @@
+name: app-server
+region: sfo
+services:
+- dockerfile_path: Dockerfile
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: https://github.com/intrepion/intrepion-greeting-json-rpc-server-csharp-dotnet-webapi.git
+  http_port: 80
+  name: server
